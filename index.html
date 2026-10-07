@@ -1,11 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="css/home.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    
+
+    <main class="center">
+        <section class="hero">
+            <div class="hero__welcome">
+                <h1 class="hero__title">
+                    Добро пожаловать <br> на мой сайт мини-игр
+                </h1>
+
+                <p class="hero__description">
+                    Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай «Поехали!» и приступай
+                </p>
+
+                <button class="hero__start-button">
+                    Поехали!
+                </button>
+            </div>
+
+            <img src="img/heroHome.svg" alt="" class="hero__img-right">
+
+            <img src="img/heroStar1.svg" alt="" class="hero__star hero__star--top-left">
+
+            <img src="img/heroStar4.svg" alt="" class="hero__star hero__star--bottom-right">
+
+            <img src="img/heroStar2.svg" alt="" class="hero__star hero__star--top">
+
+            <img src="img/heroStar3.svg" alt="" class="hero__star hero__star--bottom">
+
+            <div class="hero__animation">
+                <span class="hero__animation-span">Викторина</span>
+                <img src="img/animationLineStar.png" alt="" class="hero__animation-img">
+                <span class="hero__animation-span">угадай число</span>
+                <img src="img/animationLineStar.png" alt="" class="hero__animation-img">
+                <span class="hero__animation-span">Переверни текст</span>
+                <img src="img/animationLineStar.png" alt="" class="hero__animation-img">
+                <span class="hero__animation-span">Простая арифметика</span>
+                <img src="img/animationLineStar.png" alt="" class="hero__animation-img">
+                <span class="hero__animation-span">Камень, ножницы, бумага</span>
+                <img src="img/animationLineStar.png" alt="" class="hero__animation-img">
+                <span class="hero__animation-span">Генератор случайных цветов</span>
+                <img src="img/animationLineStar.png" alt="" class="hero__animation-img">
+            </div>
+        </section>
+
+        <section class="games">
+            <h2 class="games__title--details">Мини-игры</h2>
+            <h2 class="games__title">Об играх</h2>
+            <p class="games__description">В моей коллекции представлено 6 игр на разные темы. <br> Игры несложные — в
+                них может поиграть каждый. <br>
+                Все игры доступны для пользования</p>
+
+            <div class="games__list">
+                <article class="games__card games__card--small">
+                    <div class="games__images-box games__images-box--purple">
+                        <img src="img/gameBlock1.png" alt="" class="games__img">
+                    </div>
+
+                    <div class="games__description-box">
+                        <span class="games__number">Игра № 1</span>
+                        <h2 class="games__card-title">Угадай число</h2>
+                    </div>
+
+                    <div class="games__details">
+                        <p class="games__text">Попробуй угадать случайное число от 1 до 100</p>
+                        <button class="games__play">Играть!</button>
+                    </div>
+
+                </article>
+
+                <article class="games__card games__card--middle">
+                    <div class="games__images-box games__images-box--orange">
+                        <img src="img/gameBlock2.png" alt="" class="games__img">
+                    </div>
+
+                    <div class="games__description-box">
+                        <span class="games__number">Игра № 2</span>
+                        <h2 class="games__card-title">Простая арифметика</h2>
+                    </div>
+
+                    <div class="games__details">
+                        <p class="games__text">Попробуй решить простые арифметические задачи</p>
+                        <button class="games__play">Играть!</button>
+                    </div>
+                </article>
+
+                <article class="games__card games__card--small">
+                    <div class="games__images-box games__images-box--blue">
+                        <img src="img/gameBlock3.png" alt="" class="games__img">
+                    </div>
+
+                    <div class="games__description-box">
+                        <span class="games__number">Игра № 3</span>
+                        <h2 class="games__card-title">Переверни текст</h2>
+                    </div>
+
+                    <div class="games__details">
+                        <p class="games__text">Попробуй ввести текст, который будет перевернут.</p>
+                        <button class="games__play">Играть!</button>
+                    </div>
+                </article>
+
+                <article class="games__card games__card--big">
+                    <div class="games__images-box games__images-box--dark-blue">
+                        <img src="img/gameBlock4.png" alt="" class="games__img">
+                    </div>
+
+                    <div class="games__description-box">
+                        <span class="games__number">Игра № 4</span>
+                        <h2 class="games__card-title">Камень, ножницы, <br> бумага</h2>
+                    </div>
+
+                    <div class="games__details">
+                        <p class="games__text">Сыграй в популярную игру против компьютера</p>
+                        <button class="games__play">Играть!</button>
+                    </div>
+                </article>
+
+                <article class="games__card games__card--middle">
+                    <div class="games__images-box games__images-box--green">
+                        <img src="img/gameBlock5.png" alt="" class="games__img">
+                    </div>
+
+                    <div class="games__description-box">
+                        <span class="games__number">Игра № 5</span>
+                        <h2 class="games__card-title">Простая викторина</h2>
+                    </div>
+
+                    <div class="games__details">
+                        <p class="games__text">Отвечай на вопросы викторины с вариантами ответов</p>
+                        <button class="games__play">Играть!</button>
+                    </div>
+                </article>
+
+                <article class="games__card games__card--big">
+                    <div class="games__images-box games__images-box--dark-blue">
+                        <img src="img/gameBlock6.png" alt="" class="games__img">
+                    </div>
+
+                    <div class="games__description-box">
+                        <span class="games__number">Игра № 6</span>
+                        <h2 class="games__card-title">Генератор случайных цветов</h2>
+                    </div>
+
+                    <div class="games__details">
+                        <p class="games__text">Игра, в которой при клике на кнопку фон страницы меняется на случайный.
+                        </p>
+                        <button class="games__play">Играть!</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
 </body>
+
 </html>
