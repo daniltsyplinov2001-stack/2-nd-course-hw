@@ -113,8 +113,65 @@ body {
     }
 }
 
-.games {
+.center {
     padding: 94px calc(50% - ($container-width / 2)) 96px calc(50% - ($container-width / 2));
+    position: relative;
+
+    &__star--big {
+        position: absolute;
+        width: 584px;
+        height: 584px;
+        top: 100px;
+        right: -46px;
+        z-index: 0;
+    }
+
+    &__star--average {
+        position: absolute;
+        left: 40px;
+        top: 822px;
+        width: 54px;
+    }
+
+    &__star--small {
+        position: absolute;
+        left: 25px;
+        top: 770px;
+        width: 34px;
+    }
+
+    &__star--average-top {
+        position: absolute;
+        right: 44px;
+        top: 1685px;
+        width: 54px;
+    }
+
+    &__star--small-top {
+        position: absolute;
+        right: 123px;
+        top: 1635px;
+        width: 34px;
+    }
+
+    &__star--average-bottom {
+        position: absolute;
+        right: 44px;
+        top: 4836px;
+        width: 54px;
+    }
+
+    &__star--small-bottom {
+        position: absolute;
+        right: 123px;
+        top: 4884px;
+        width: 34px;
+    }    
+}
+
+.games {
+    position: relative;
+
 
     &__title--details {
         color: $color-white;
@@ -138,6 +195,7 @@ body {
     }
 
     &__list {
+        position: relative;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         column-gap: 32px;
@@ -237,6 +295,102 @@ body {
         border-radius: 60px;
         color: $color-white;
         margin-top: 32px;
+        width: 100%;
+    }
+}
+
+.mini-games {
+    padding-top: 96px;
+
+    &__title {
+        font-size: 4rem;
+        color: $color-white;
+        padding-bottom: 72px;
+    }
+
+    &__card {
+        background-color: $color-white;
+        height: 500px;
+        max-width: 1200px;
+        width: 100%;
+        border-radius: 30px;
+        display: flex;
+        justify-content: space-between;
+
+        &:not(:first-child) {
+            margin-top: 32px;
+        }
+    }
+
+    &__card-content {
+        width: 600px;
+    }
+
+    &__card-title {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    &__card-description {
+        font-size: 1.5rem;
+        width: 410px;
+        line-height: 32px;
+        padding: 24px 0 36px 0;
+    }
+
+    &__card-play {
+        background-color: $color-black;
+        color: $color-white;
+        font-size: 1.5rem;
+        padding: 16px 75px;
+        border-radius: 60px;
+    }
+
+    &__images-box {
+        border-radius: 30px;
+        overflow: hidden;
+
+        &--purple {
+            background-color: $color-purple;
+        }
+
+        &--orange {
+            background-color: $color-orange;
+        }
+
+        &--blue {
+            background-color: $color-blue;
+        }
+
+        &--dark-blue {
+            background-color: $color-dark-blue;
+        }
+
+        &--green {
+            background-color: $color-green;
+        }
+    }
+
+    &__img {
+        width: 600px;
+        height: 500px;
+    }
+
+    &__card-content {
+        padding: 48px 0 203px 48px;
+    }
+}
+
+.footer {
+    height: 150px;
+    background-color: #BDED35;
+    align-content: center;
+
+    &__copyright {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: $color-black;
+        text-align: center;
     }
 }
 
@@ -325,8 +479,30 @@ body {
         }
     }
 
+    .center {
+
+        &__star--big,
+        &__star--average,
+        &__star--small,
+        &__star--average-top,
+        &__star--small-top,
+        &__star--average-bottom,
+        &__star--small-bottom {
+            display: none;
+        }
+    }
+
+    .mini-games {
+        display: none;
+    }
+
     .games {
-        padding: 48px 16px 10px 16px;
+
+        &__star--big,
+        &__star--average,
+        &__star--small {
+            display: none;
+        }
 
         &__title--details {
             display: block;
@@ -378,4 +554,12 @@ body {
             display: block;
         }
     }
+
+.footer {
+    height: 100px;
+
+    &__copyright {
+        font-size: 2rem;
+    }
+}
 }
