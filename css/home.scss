@@ -59,6 +59,15 @@ body {
         font-size: 1.5rem;
         font-weight: 600;
         margin-top: 48px;
+        transition: background-color .2s ease,
+            border .2s ease,
+            color .2s ease;
+
+        &:hover {
+            background-color: $color-white;
+            border: 2px $color-black solid;
+            color: $color-black;
+        }
     }
 
     &__img-right {
@@ -173,7 +182,7 @@ body {
         right: 123px;
         top: 4884px;
         width: 34px;
-    }    
+    }
 }
 
 .games {
@@ -207,6 +216,11 @@ body {
         grid-template-columns: repeat(3, 1fr);
         column-gap: 32px;
         margin-top: 72px;
+    }
+
+    &__block-five {
+        display: flex;
+        align-items: flex-end;
     }
 
     &__card {
@@ -303,6 +317,15 @@ body {
         color: $color-white;
         margin-top: 32px;
         width: 100%;
+        transition: background-color .2s ease,
+            border .2s ease,
+            color .2s ease;
+
+        &:hover {
+            background-color: $color-white;
+            border: 2px $color-black solid;
+            color: $color-black;
+        }
     }
 }
 
@@ -351,6 +374,15 @@ body {
         font-size: 1.5rem;
         padding: 16px 75px;
         border-radius: 60px;
+        transition: background-color .2s ease,
+            border .2s ease,
+            color .2s ease;
+
+        &:hover {
+            background-color: $color-white;
+            border: 2px $color-black solid;
+            color: $color-black;
+        }
     }
 
     &__images-box {
@@ -562,11 +594,11 @@ body {
         }
     }
 
-.footer {
-    height: 100px;
+    .footer {
+        height: 100px;
 
-    &__copyright {
-        font-size: 2rem;
+        &__copyright {
+            font-size: 2rem;
+        }
     }
-}
 }

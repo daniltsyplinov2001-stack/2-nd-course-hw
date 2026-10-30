@@ -54,6 +54,12 @@ body {
   font-size: 1.5rem;
   font-weight: 600;
   margin-top: 48px;
+  transition: background-color 0.2s ease, border 0.2s ease, color 0.2s ease;
+}
+.hero__start-button:hover {
+  background-color: #fff;
+  border: 2px #000 solid;
+  color: #000;
 }
 .hero__img-right {
   position: absolute;
@@ -183,6 +189,10 @@ body {
        column-gap: 32px;
   margin-top: 72px;
 }
+.games__block-five {
+  display: flex;
+  align-items: flex-end;
+}
 .games__card {
   width: 378px;
   background-color: #fff;
@@ -259,6 +269,12 @@ body {
   color: #fff;
   margin-top: 32px;
   width: 100%;
+  transition: background-color 0.2s ease, border 0.2s ease, color 0.2s ease;
+}
+.games__play:hover {
+  background-color: #fff;
+  border: 2px #000 solid;
+  color: #000;
 }
 
 .mini-games {
@@ -300,6 +316,12 @@ body {
   font-size: 1.5rem;
   padding: 16px 75px;
   border-radius: 60px;
+  transition: background-color 0.2s ease, border 0.2s ease, color 0.2s ease;
+}
+.mini-games__card-play:hover {
+  background-color: #fff;
+  border: 2px #000 solid;
+  color: #000;
 }
 .mini-games__images-box {
   border-radius: 30px;
