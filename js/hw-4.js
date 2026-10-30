@@ -17,17 +17,23 @@ console.log(compare(5, 5));
 console.log('2 Задание');
 const EvenOrOdd = (n) => {
     n % 2 === 0 
-    ? console.log('Четное')
-    : console.log('Не четное');
+    ? 'Четное'
+    : 'Не четное';
 }
 
-EvenOrOdd(3)
+console.log(EvenOrOdd(3)); 
 
 
 // 3
 console.log('3 Задание');
+
 const degree = n => n**2
 
+const degree1 = n => {
+    console.log(n ** 2)
+}
+
+degree1(3)
 console.log(degree(3)); 
 
 
@@ -67,11 +73,9 @@ console.log(correctNumber(2, 2));
 const CheckTheNumber = () => {
     let num = Number(prompt('Введите число'));
 
-    if (isNaN(num)) {
-        return alert('Переданный параметр не является числом')
-    }
-
-    return alert(`${num} в кубе равняется ${num**3}`)
+    return isNaN(num)
+        ? 'Переданный параметр не является числом'
+        : `${num} в кубе равняется ${num**3}`
 }
 
 CheckTheNumber();
