@@ -1,39 +1,39 @@
-// const quiz = [
-//     {
-//         question: "Какой цвет небо?",
-//         options: ["1. Красный", "2. Синий", "3. Зеленый"],
-//         correctAnswer: 2
-//     },
-//     {
-//         question: "Сколько дней в неделе?",
-//         options: ["1. Шесть", "2. Семь", "3. Восемь"],
-//         correctAnswer: 2
-//     },
-//     {
-//         question: "Сколько у человека пальцев на одной руке?",
-//         options: ["1. Четыре", "2. Пять", "3. Шесть"],
-//         correctAnswer: 2
-//     }
-// ];
+const quiz = [
+    {
+        question: "Какой цвет небо?",
+        options: ["1. Красный", "2. Синий", "3. Зеленый"],
+        correctAnswer: 2
+    },
+    {
+        question: "Сколько дней в неделе?",
+        options: ["1. Шесть", "2. Семь", "3. Восемь"],
+        correctAnswer: 2
+    },
+    {
+        question: "Сколько у человека пальцев на одной руке?",
+        options: ["1. Четыре", "2. Пять", "3. Шесть"],
+        correctAnswer: 2
+    }
+];
 
-// function quizAnswer() {
-//     let count = 0;
+function quizAnswer() {
+    let count = 0;
 
-//     for (let item of quiz) {
-//         let popup = Number(
-//             prompt(`${item.question}
-// ${item.options.join("\n")}`)
-//         );
+    for (let item of quiz) {
+        let popup = Number(
+            prompt(`${item.question}
+${item.options.join("\n")}`)
+        );
 
-//         if (popup === item.correctAnswer) {
-//             count++;
-//         }
-//     }
+        if (popup === item.correctAnswer) {
+            count++;
+        }
+    }
 
-//     alert(`Количество правильных ответов: ${count}`);
-// }
+    alert(`Количество правильных ответов: ${count}`);
+}
 
-// quizAnswer();
+quizAnswer();
 
 
 
@@ -100,24 +100,24 @@ console.log(newArr6)
 
 
 //Задание 7
-// const arr7 = [9, 8, 7, 6, 5];
+const arr7 = [9, 8, 7, 6, 5];
 
-// let popup2 = Number(prompt('Угадайте число'));
+let popup2 = Number(prompt('Угадайте число'));
 
-// let isFound = false;
+let isFound = false;
 
-// for (let item of arr7) {
-//     if (popup2 === item) {
-//         isFound = true;
-//         break;
-//     }
-// }
+for (let item of arr7) {
+    if (popup2 === item) {
+        isFound = true;
+        break;
+    }
+}
 
-// if (isFound) {
-//     alert('Угадал!');
-// } else {
-//     alert('Не угадал!');
-// }
+if (isFound) {
+    alert('Угадал!');
+} else {
+    alert('Не угадал!');
+}
 
 
 //Задание 8
@@ -134,11 +134,10 @@ console.log(result);
 
 
 //Задание 10
-const arr9 = [2, 5, 7]
-let result2 = 0;
+const arr9 = [2, 5, 7];
 
-for (let i = 0; i < arr9.length; i++) {
-    console.log(result2 += arr9[i]);
+for (let i = 0; i < arr9.length - 1; i++) {
+  console.log(arr9[i] + arr9[i + 1]);
 }
 
 
