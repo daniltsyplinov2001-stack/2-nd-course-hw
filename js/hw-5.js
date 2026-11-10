@@ -33,7 +33,7 @@ ${item.options.join("\n")}`)
     alert(`Количество правильных ответов: ${count}`);
 }
 
-quizAnswer();
+
 
 
 
